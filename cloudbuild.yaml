@@ -16,4 +16,4 @@
 steps:
   - name: gradle:8-jdk17
     entrypoint: gradle
-    args: ["sonar"]
+    args: ["sonar", "-Dsonar.projectKey=cloud_build", "-Dsonar.host.url=http://34.121.16.65:9000", "-Dsonar.login=9a31e93ec209f8997b2c80896f006e70a05b93f4"]
